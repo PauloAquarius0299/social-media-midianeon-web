@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    outline: none;
+    border: 1px solid gray;
+    
+}
+.createmain{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 12px;
+   
+}
+.createposttitle{
+    font-size: 15px;
+    font-weight: 600;
+}
+#imagefropost{
+    width: 100%;
+    text-align: center;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 12px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: gray;
+}
+#uploadbuttonicon{
+    width: 25px;
+}
+#submitbutton{
+    display: flex;
+    justify-content: center;
+}
+#progressdiv{
+    width: 100%;
+    border-radius: 10px;
+}
+#createpostbtn{
+    width: 180px;
+    padding: 5px 0px;
+    border: none;
+    background: blueviolet;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+#createpostbtn:hover{
+    background-color: rgb(147, 64, 224);
+}
+
+#textarea{
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgba(255, 221, 211);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:310px){
+    #uploadbuttonicon{
+        width:25px;
+    }
+    #submitbutton{
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+    }
+}

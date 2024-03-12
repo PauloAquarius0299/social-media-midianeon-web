@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/register.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="register-1">
+            <div class="register-2">
+                <h2>Cadastrar</h2>
+            </div>
+            <div class="register-3">
+                <div class="register-title">
+                 <h5>Primeiro Nome</h5>
+                </div>
+                <input type="text" placeholder="Fist Name" id="fistname">
+             </div>
+             <div class="register-3">
+                 <div class="register-title">
+                     <h5>Sobrenome</h5>
+                 </div>
+                 <input type="text" placeholder="Last Name" id="lastname">
+             </div>
+             <div class="register-3">
+                <div class="register-title">
+                    <h5>Telefone</h5>
+                </div>
+                <input type="number" placeholder="Mobile Number" id="mobilenumber">
+            </div>
+            <div class="register-3">
+                <div class="register-title">
+                    <h5>Email</h5>
+                </div>
+                <input type="email" placeholder="Email Address" id="emailaddress">
+            </div>
+            <div class="register-3">
+                <div class="register-title">
+                    <h5>Senha</h5>
+                </div>
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <div class="register-3">
+                <div class="register-title">
+                    <h5>Confirmar Senha</h5>
+                </div>
+                <input type="password" placeholder="Re-Password" id="repassword">
+            </div>
+            <p id="message"></p>
+            <div class="register-4">
+           <button id="register" onClick="signup()">Sign Up</button>
+            </div>
+            <div class="register-5">
+                <p>Já possuí conta?
+                    <span id="login" onClick='login()'>Login In</span>
+                </p>
+            </div>
+        </div>
+       
+    </div>
+     <div class="alert">
+            <a href="https://temp-mail.org/pt/" target="_blank"> Crie um email digital temporario, <span class="bold"> Nesse Link</span>, para ter acesso ao midiaNeon </a>
+        </div>
+
+    <script src="../js/register.js"></script>
+    <script src="../js/firebase.js"></script>
+</body>
+</html>

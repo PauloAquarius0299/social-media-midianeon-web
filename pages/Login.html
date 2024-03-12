@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidiaNeon</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="login-1">
+            <div class="login-2">
+                <h2>MidiaNeon</h2>
+            </div>
+            <div class="login-3">
+                <div class="login-title">
+                    <h4>Email</h4>
+                </div>
+                <input type="email" placeholder="Email Address" class="input" name="email" id="email">
+            </div>
+            <div class="login-title">
+                <h4>Senha</h4>
+            </div>
+            <input type="password" placeholder="Password" class="input" name="password" id="password">
+            <p id="message"></p>
+            <div class="login-4">
+            <button id="login" onClick="login()">Login In</button>
+        </div>
+        <div class="login-5">
+            <h4 onClick="ForgetPassword()">Esqueceu a Senha?</h4>
+        </div>
+        <div class="login-6">
+            <p>Você já tem uma conta?
+                <span id="signup" onClick="signup()">Cadastrar</span>
+            </p>
+        </div>
+        
+            
+        </div>
+    </div>
+
+    <script src="../js/firebase.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

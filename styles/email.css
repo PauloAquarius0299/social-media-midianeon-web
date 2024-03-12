@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #f0f3f5;
+}
+.verify-1{
+    background: #fff;
+    border-radius: 10px;
+    width: 450px;
+    padding: 15px;
+    margin-right: 20px;
+    min-width: 200px;
+    max-width: 500px;
+}
+.para{
+    font-size: smaller;
+}
+.verify-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+    margin-bottom: 5px;
+    background: blueviolet;
+    border-radius: 24px ;
+}
+#bold{
+    font-weight: bold;
+}
+#emailid{
+    color: #3360f8;
+    font-weight: bold;
+}
+.btn{
+    color: white;
+    width: 45%;
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(158, 4, 230), blue);;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #587aeb;
+}
+
+.alert{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+.alert p {
+    color: red;
+    margin-top: 2rem;
+}

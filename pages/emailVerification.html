@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/email.css">
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="verify-1">
+            <div class="verify-2">
+                <img src="../image/email.png" alt="user" width="70px">
+                <h5>Verifique seu Email</h5>
+                <p id="para">Você está quase chegando, enviamos um e-mail para <span id="emailid"></span></p>
+                <br>
+                <p>Apenas click no link do seu Email para completar seu cadastro. Se você não viu <span id="bold"> verifique sua  caixa de entrada</span> </p>
+            </div>
+            <p id="message"></p>
+            <div class="buttons">
+                <button class="btn" onClick="resend()">Resend</button>
+                <button class="btn" onClick="reloud()">Confirm</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="alert">
+        <p>Entre no link do Temp-mail para confirmar seu email e ter acesso ao midiaNeom</p>
+    </div>
+
+    
+    <script src="../js/firebase.js"></script>
+    <script src="../js/email.js"></script>
+</body>
+</html>
